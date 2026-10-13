@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#8f294f">
+<title>Para Nahomi ♡</title>
+<style>
+:root{--wine:#74253f;--rose:#d86f8c;--cream:#fff8f4;--ink:#422633;--gold:#e7c88c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+button,input{font:inherit}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:28px 18px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 15%,#ffe2e7,transparent 35%),radial-gradient(circle at 85% 80%,#f6d7bd,transparent 34%),linear-gradient(145deg,#fff8f4,#fce7eb)}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font:12px Arial,sans-serif;color:var(--wine)}h1{font-size:clamp(2.7rem,10vw,5.6rem);line-height:.98;margin:18px 0;color:var(--wine);font-weight:normal}.hero p{font-size:1.15rem;line-height:1.7;max-width:520px;margin:0 auto 24px}.btn{border:0;border-radius:999px;padding:14px 22px;background:var(--wine);color:white;cursor:pointer;box-shadow:0 8px 22px #74253f26;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.btn.light{background:#fff;color:var(--wine);border:1px solid #e8c5ce}.heart{font-size:2rem;color:var(--rose);animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.16)}}.float{position:absolute;bottom:-40px;color:#d86f8c99;animation:rise 9s linear infinite;pointer-events:none}@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+section{padding:72px 18px;max-width:980px;margin:auto}.section-title{text-align:center;font-size:clamp(2rem,6vw,3rem);font-weight:normal;color:var(--wine);margin:0 0 12px}.sub{text-align:center;line-height:1.7;max-width:600px;margin:0 auto 30px;color:#765765}.divider{text-align:center;color:var(--rose);font-size:1.4rem;letter-spacing:.5em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.memory{background:white;padding:12px;border-radius:18px;box-shadow:0 8px 30px #5b2d3c0d;transform:rotate(var(--tilt));}.memory img{width:100%;height:240px;object-fit:cover;border-radius:12px;background:#f4e2e4}.memory p{text-align:center;margin:12px 4px 6px;line-height:1.4}.placeholder{display:grid;place-items:center;height:240px;border-radius:12px;background:linear-gradient(145deg,#fbe3e7,#fff0d9);color:#96556b;text-align:center;padding:20px}.card{background:white;border:1px solid #f1dce2;border-radius:22px;padding:clamp(22px,5vw,42px);box-shadow:0 14px 40px #5b2d3c0c}.letter{font-size:1.1rem;line-height:1.95;white-space:pre-line}.signature{font-style:italic;color:var(--wine);font-size:1.3rem;margin-top:22px}.music{text-align:center;background:#f8e7e9;border-radius:22px;padding:28px}.music input{display:block;max-width:100%;margin:18px auto}.surprise{text-align:center;background:linear-gradient(140deg,#fff1e7,#f8dfe7);border-radius:24px;padding:35px 22px}.hidden{display:none!important}.reveal{font-size:1.2rem;line-height:1.8;max-width:650px;margin:24px auto 0}.footer{text-align:center;padding:30px 16px 50px;color:#966c7a;font-size:.9rem}.small{font:13px Arial,sans-serif;color:#8a6574;line-height:1.6}.file-label{display:inline-block;background:white;border:1px solid #e5bdc9;padding:10px 14px;border-radius:999px;cursor:pointer;color:var(--wine);font:13px Arial,sans-serif}.controls{text-align:center;margin:18px 0}.confetti{position:fixed;top:-20px;z-index:20;pointer-events:none;animation:fall 3.5s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.2}}
+</style>
+</head>
+<body>
+<header class="hero" id="inicio">
+  <div>
+    <div class="heart">♡</div>
+    <div class="eyebrow">13 · 10 · 2026 &nbsp; ♡ &nbsp; Una sorpresa para ti</div>
+    <h1>Feliz cumpleaños,<br>mi amor</h1>
+    <p>Hoy, 13 de octubre, quería regalarte algo que pudieras guardar y volver a abrir cuando quieras. No es solo una página: son un montón de cosas que a veces no sé decirte de frente.</p>
+    <button class="btn" onclick="document.getElementById('recuerdos').scrollIntoView({behavior:'smooth'});burst(24)">Abrir nuestra historia ♡</button>
+  </div>
+</header>
+<main>
+<section id="recuerdos">
+  <h2 class="section-title">Pedacitos de nosotros</h2>
+  <p class="sub">Hay momentos que parecen pequeños mientras pasan, pero después se convierten en los que más queremos guardar.</p>
+  <div class="controls">
+    <label class="file-label">Añadir nuestras fotos <input id="photos" type="file" accept="image/*" multiple hidden></label>
+  </div>
+  <div class="grid" id="gallery">
+    <article class="memory" style="--tilt:-1deg">
+  <img src="fotos/foto1.jpg" alt="Mi Reina Hermosa">
+  <p>Ese día que siempre voy a guardar.</p>
+</article>
+    <article class="memory" style="--tilt:-1deg">
+  <img src="fotos/foto2.jpg" alt="Mi Princesa Guapa">
+  <p>Eres la mas Hermosa del mundo.</p>
+</article>
+    <article class="memory" style="--tilt:-1deg">
+  <img src="fotos/foto3.jpg" alt="Te Amo Muchoo">
+  <p>Juntos por Siempre.</p>
+</article>
+  </div>
+</section>
+<div class="divider">♡ · ♡ · ♡</div>
+<section id="carta">
+  <h2 class="section-title">Unas palabras para ti</h2>
+  <p class="sub">No quería que este día pasara sin recordarte lo importante que eres para mí.</p>
+  <div class="card">
+    <div class="letter">Mi Nahomi,
+
+Feliz cumpleaños, mi amor. Espero que hoy tengas muchos motivos para sonreír y que la vida te devuelva un poquito de toda la alegría que tú puedes darle a quienes te queremos.
+
+Quiero que sepas que me hace feliz compartir mi vida contigo. Admiro muchas cosas de ti, tu forma de ser, tu sonrisa, tus ojos y esa manera tan tuya de hacer que un momento normal termine siendo especial. Puede que a veces no encuentre las palabras perfectas o que no sea el más expresivo, pero lo que siento por ti es real y quiero demostrártelo también con mis acciones.
+
+Deseo que este nuevo año te traiga oportunidades bonitas, tranquilidad, metas cumplidas y muchas razones para sentirte orgullosa de ti misma. Quiero acompañarte, verte crecer, celebrar tus logros y seguir construyendo recuerdos contigo, paso a paso y de verdad.
+
+Gracias por ser tú, por formar parte de mi vida y por todos los momentos que hemos compartido. Hoy la protagonista eres tú, así que disfruta mucho, sonríe todo lo que puedas y nunca olvides lo especial que eres para mí.
+
+Te amo, mi amor. Feliz cumpleaños. ♡</div>
+    <div class="signature">De un loco enamorado ❤️</div>
+  </div>
+</section>
+<section id="musica">
+  <h2 class="section-title">Nuestra canción</h2>
+  <div class="music">
+    <div style="font-size:2rem">♫ ♡ ♪</div>
+    <p><strong>Damiano David · The First Time</strong></p>
+    <a class="btn" href="https://www.youtube.com/results?search_query=Damiano+David+The+First+Time" target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none">Escuchar nuestra canción ♫</a>
+    <audio controls style="width:100%;margin-top:18px">
+  <source src="cancion.mp3" type="audio/mpeg">
+  </div>
+</section>
+<section id="final">
+  <div class="surprise">
+    <div class="heart">♡</div>
+    <h2 class="section-title">Una promesa para nuestro futuro</h2>
+    <p class="sub">Guarda este último mensaje para cuando quieras volver a leerlo.</p>
+    <button class="btn" onclick="document.getElementById('mensaje').classList.remove('hidden');burst(70);this.textContent='Promesa desbloqueada ♡';this.disabled=true">Abrir mi promesa 🎁</button>
+    <div id="mensaje" class="reveal hidden">Mi amor, no puedo prometerte que todos los días serán perfectos, pero sí quiero prometerte que voy a esforzarme por cuidar lo nuestro con hechos, hablar contigo con sinceridad y seguir aprendiendo a ser mejor compañero para ti. Quiero que construyamos un futuro donde los dos podamos crecer, cumplir nuestras metas y sentir que estamos del mismo lado, incluso cuando las cosas se pongan difíciles. <br><br>Quiero seguir tomándote de la mano en los días importantes y también en los días comunes, seguir conociéndote, hacerte reír y sumar recuerdos que algún día miremos con una sonrisa. Nuestra historia es unica, mi amor; estaremos juntos por siempre, con cariño, paciencia y mucho amor. <br><br><strong>Feliz cumpleaños Mi AMOR. Nos quedan muchísimas páginas por vivir juntos. Te amo Nahomi❤️</strong></div>
+  </div>
+</section>
+</main>
+<footer class="footer">Hecho con cariño, especialmente para mi amor, Nahomi · 13.10.2026 · ♡<br><span class="small">Un pequeño rincón de nosotros.</span></footer>
+<script>
+const photoInput=document.getElementById('photos');
+photoInput.addEventListener('change',e=>{
+ const files=[...e.target.files]; if(!files.length)return;
+ const gallery=document.getElementById('gallery'); gallery.innerHTML='';
+ files.forEach((file,i)=>{const url=URL.createObjectURL(file);const article=document.createElement('article');article.className='memory';article.style.setProperty('--tilt',`${i%2===0?'-1':'1'}deg`);const img=document.createElement('img');img.src=url;img.alt='Recuerdo de nosotros';const p=document.createElement('p');p.contentEditable='true';p.textContent=['Un recuerdo que guardo con cariño.','De mis momentos favoritos contigo.','Y quiero muchos más así.'][i%3];article.append(img,p);gallery.append(article)});
+});
+document.getElementById('songFile').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const p=document.getElementById('player');p.src=URL.createObjectURL(f);p.classList.remove('hidden');p.play().catch(()=>{});});
+function burst(n){const symbols=['♡','♥','✦','✧','🌸'];for(let i=0;i<n;i++){const el=document.createElement('span');el.className='confetti';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(14+Math.random()*22)+'px';el.style.color=['#d86f8c','#a84968','#e2b96f','#bc7790'][Math.floor(Math.random()*4)];el.style.animationDuration=(2.4+Math.random()*2)+'s';document.body.append(el);setTimeout(()=>el.remove(),4800)}}
+for(let i=0;i<12;i++){const el=document.createElement('span');el.className='float';el.textContent='♡';el.style.left=Math.random()*100+'vw';el.style.animationDelay=(Math.random()*9)+'s';el.style.animationDuration=(7+Math.random()*6)+'s';el.style.fontSize=(16+Math.random()*18)+'px';document.querySelector('.hero').append(el)}
+</script>
+</body>
+</html>
